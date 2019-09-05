@@ -1,0 +1,2 @@
+1-node js
+ans:it is the javascript runtime which run on the browser
