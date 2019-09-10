@@ -1,2 +1,23 @@
 1-node js
 ans:it is the javascript runtime which run on the browser
+
+2--- there are three type of errors in node js
+a-syntax errors
+b-logical errors
+c-runtime errors
+
+3----what is express.js
+What is Express.js. Express is a fast, assertive, 
+essential and moderate web framework of Node.js. 
+You can assume express as a layer built on the 
+top of the Node.js that helps manage a server and 
+routes. It provides a robust set of features to 
+develop web and mobile applications.
+
+__dirname which is a global variable and it holds our absolute path
+
+
+2--MVC
+a--Moudles.it represent your data in your code.work with your data(ex save and fetch)
+b--view.what the user sees, decoupled from your application code.
+c--controllers.connecting your models and your view.it contains in-between logic.like routes.
