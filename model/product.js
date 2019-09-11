@@ -31,6 +31,7 @@ module.exports = class product{
   
    
     save(){
+        this.id = Math.random().toString();
        getProductsFromFile(products =>{
            products.push(this)
         fs.writeFile(p, JSON.stringify(products), err =>{
@@ -40,5 +41,13 @@ module.exports = class product{
     }
     static fetchAll(cb){
         getProductsFromFile(cb);
+    }
+
+    //i want to load single file
+    static findById(id, cb){
+        getProductsFromFile(products =>{
+            const product = products.find(p => p.id === id);
+            cb(product);
+        })
     }
 }
