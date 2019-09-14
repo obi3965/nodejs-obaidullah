@@ -1,7 +1,8 @@
 const Sequelize = require('sequelize');
 
-const sequelize = require('../helper/database');
+const sequelize = require('../util/database.js');
 
+//here define is a moudel for lowercase
 const Product = sequelize.define('product', {
   id: {
     type: Sequelize.INTEGER,
